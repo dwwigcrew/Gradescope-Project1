@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+cp /autograder/submission/enee140_gen_rnd.c /autograder/source/enee140_gen_rnd.c
+cd /autograder/source/
+
+gcc -o enee140_gen_rnd enee140_gen_rnd.c -lm
+
+python run_tests.py > /autograder/results/results.json

@@ -1,0 +1,15 @@
+
+Welcome to the ENEE140 pseudo-random number generator!
+1: Print RND_MAX
+2: Generate uniformly-distributed positive integers
+3: Generate uniformly-distributed positive integers, up to a given limit
+4: Generate uniformly-distributed integers, from a given range
+5: Generate uniformly-distributed floats, from a given range
+6: Generate exponentially-distributed floats
+
+Enter your choice (1-6): 
+Select the algorithm to use.
+
+Enter your choice (1-3): 
+Select the seed for the random number generator: 
+How many numbers should I generate: 1818089694 3585944255 860591500 352814293 275424490 1923331035 1726119544 432576849 1053173174 2057286327 
