@@ -1,14 +1,15 @@
 import unittest
-from gradescope_utils.autograder_utils.decorators import weight, tags
+from gradescope_utils.autograder_utils.decorators import weight, tags, visibility
 import subprocess32 as subprocess
 
 
 class TestDiff(unittest.TestCase):
     def setUp(self):
         pass
-        
+
     @weight(10.0)
-    @tags("Test1 ")
+    @visibility("hidden")
+    @tags("Test1")
     def test_from_file1(self):
         # Test 1
         """Test 1"""
@@ -23,6 +24,7 @@ class TestDiff(unittest.TestCase):
         enee140_gen_rnd.terminate()
 
     @weight(10.0)
+    @visibility("hidden")
     @tags("Test 2")
     def test_from_file2(self):
         # Test 2
@@ -38,6 +40,7 @@ class TestDiff(unittest.TestCase):
         enee140_gen_rnd.terminate()
 
     @weight(10.0)
+    @visibility("hidden")
     @tags("Test 3")
     def test_from_file3(self):
         # Test 3
@@ -53,6 +56,7 @@ class TestDiff(unittest.TestCase):
         enee140_gen_rnd.terminate()
 
     @weight(10.0)
+    @visibility("hidden")
     @tags("Test 4")
     def test_from_file4(self):
         # Test 4
@@ -68,6 +72,7 @@ class TestDiff(unittest.TestCase):
         enee140_gen_rnd.terminate()
 
     @weight(10.0)
+    @visibility("hidden")
     @tags("Test 5")
     def test_from_file5(self):
         # Test 5
@@ -83,6 +88,7 @@ class TestDiff(unittest.TestCase):
         enee140_gen_rnd.terminate()
 
     @weight(10.0)
+    @visibility("hidden")
     @tags("Test 6")
     def test_from_file6(self):
         # Test 6
